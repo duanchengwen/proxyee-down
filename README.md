@@ -38,10 +38,23 @@
 ```
 git clone https://github.com/proxyee-down-org/proxyee-down.git
 cd proxyee-down/front
+#install npm
+sudo apt-get install nodejs-dev node-gyp libssl1.0-dev
+sudo apt install npm
+#Update nodejs to latest version:
+sudo npm install -g n
+sudo n latest
+#Update npm to latest version:
+sudo npm install -g npm
+hash -d npm
+#Try npm install
+npm i
 #build html
 npm install
 npm run build
 cd ../main
+#install mvn
+sudo apt-get install mvn
 mvn clean package -Pprd
 ```
 
